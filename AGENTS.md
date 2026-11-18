@@ -1,6 +1,6 @@
 # Device HUB 開発指示
 
-正式仕様は docs/SPECIFICATION.md（v1.0.0）。競合時はユーザー指示と正式仕様を優先する。
+正式仕様は docs/SPECIFICATION.md（v1.0.1）。競合時はユーザー指示と正式仕様を優先する。
 Windows 11 / Rust / egui を採用予定。Electron 禁止。オフライン動作、軽量性、安全性を優先。
 Agent が HID を所有し GUI はバージョン付き・現在ユーザー限定 Named Pipe で通信する設計。
 Phase 0 は core / mock / CLI snapshot のみ。実装予定を実装済みと扱わない。
@@ -13,7 +13,8 @@ Phase 0 は core / mock / CLI snapshot のみ。実装予定を実装済みと�
 main / develop に直接コミットしない。Conventional Commits（英語）を使う。
 機能別 Issue に目的・依存・完了条件・テスト・実機要否・リスクを記録する。
 feature PR は develop 向け。PR に Issue、変更、依存、検証、実機未検証、リスクを明記。
-ユーザーの明示承認なくマージ、正式タグ・リリース、ブランチ削除、強制 push、履歴変更をしない。
+PR は CI 成功・差分レビュー・必要な実機検証を満たせば個別の承認なしでマージしてよい（ユーザーの2026-11-18指示）。
+正式タグ・リリース、ブランチ削除、強制 push、履歴変更は引き続き明示承認が必要。
 空リポジトリの base branch 初期化や設定変更は確認する。ユーザー変更を保護する。
 ライセンスはユーザー決定まで追加しない。
 

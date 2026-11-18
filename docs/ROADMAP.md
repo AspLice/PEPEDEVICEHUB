@@ -1,7 +1,7 @@
 # 開発計画
 
 以下の計画を GitHub Issue と7件の milestone に登録済み。
-main は安定版、develop は統合、機能は PR で develop に統合。マージはユーザー承認必須。
+main は安定版、develop は統合、機能は PR で develop に統合。マージは品質条件を満たせば個別承認不要。
 ユーザー承認により空の初期コミットから main / develop を作成済み。初期実装は feature/project-bootstrap に分離。
 
 | 仮ID | Issue / milestone | 依存 | 完了条件・検証 | 実機・リスク |
