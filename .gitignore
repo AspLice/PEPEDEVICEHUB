@@ -5,3 +5,6 @@
 *.pcapng
 *.log
 /local/
+
+/hid-inventory.json
+/scanner-package/
