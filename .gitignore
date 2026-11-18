@@ -1,0 +1,7 @@
+/target/
+.env
+.env.*
+*.pcap
+*.pcapng
+*.log
+/local/

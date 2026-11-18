@@ -1,0 +1,17 @@
+[workspace]
+members = ["crates/device-core", "crates/device-mock", "crates/device-hub-agent"]
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0-alpha.1"
+edition = "2024"
+rust-version = "1.91"
+publish = false
+
+[workspace.lints.rust]
+unsafe_code = "forbid"
+
+[profile.release]
+lto = "thin"
+codegen-units = 1
+strip = true
