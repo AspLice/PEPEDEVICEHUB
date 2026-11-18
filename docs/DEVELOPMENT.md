@@ -13,5 +13,5 @@ cd /workspace/PEPEDEVICEHUB
 
 Mock snapshot は即時終了し、再起動する常駐サービスはまだない。
 GitHub API 接続と Git HTTPS proxy の権限は別。Git 読取成功だけで Issue/PR 操作可能と判断しない。
-API の Forbidden は現在のブロッカー。秘密値をチャットやリポジトリに書かない。
+公開後の環境で API 接続を確認済み。秘密値をチャットやリポジトリに書かない。
 Windows で同じ cargo 検証を実行し、CI 結果も確認する。

@@ -1,6 +1,6 @@
 # 開発計画
 
-以下は GitHub 登録用の計画であり、Issue / milestone 作成済みを意味しない。
+以下の計画を GitHub Issue と7件の milestone に登録済み。
 main は安定版、develop は統合、機能は PR で develop に統合。マージはユーザー承認必須。
 ユーザー承認により空の初期コミットから main / develop を作成済み。初期実装は feature/project-bootstrap に分離。
 
@@ -19,3 +19,16 @@ main は安定版、develop は統合、機能は PR で develop に統合。マ
 
 Issue 作成時は目的、範囲、依存、完了条件、テスト、実機要否、リスクを上記から展開する。
 未承認の release workflow は作らず、後続 Phase で配布方針確定後に追加する。
+
+## GitHub Issues
+
+- [P0: #1](https://github.com/AspLice/PEPEDEVICEHUB/issues/1)
+- [P1a: #2](https://github.com/AspLice/PEPEDEVICEHUB/issues/2)
+- [P1b: #3](https://github.com/AspLice/PEPEDEVICEHUB/issues/3)
+- [P1c: #4](https://github.com/AspLice/PEPEDEVICEHUB/issues/4)
+- [P1d: #5](https://github.com/AspLice/PEPEDEVICEHUB/issues/5)
+- [P2: #6](https://github.com/AspLice/PEPEDEVICEHUB/issues/6)
+- [P3: #7](https://github.com/AspLice/PEPEDEVICEHUB/issues/7)
+- [P4: #8](https://github.com/AspLice/PEPEDEVICEHUB/issues/8)
+- [P5: #9](https://github.com/AspLice/PEPEDEVICEHUB/issues/9)
+- [P6: #10](https://github.com/AspLice/PEPEDEVICEHUB/issues/10)
