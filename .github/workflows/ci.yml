@@ -12,10 +12,14 @@ jobs:
         os: [ubuntu-latest, windows-latest]
     runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - run: rustup show
       - run: cargo fmt --all -- --check
       - run: cargo clippy --workspace --all-targets --locked -- -D warnings
       - run: cargo test --workspace --locked
       - run: cargo build --workspace --release --locked
       - run: cargo run --locked -p device-hub-agent -- --mock --once
+      - name: Test read-only Windows inventory
+        if: runner.os == 'Windows'
+        shell: powershell
+        run: ./scripts/Test-DeviceInventory.ps1

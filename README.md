@@ -31,3 +31,5 @@ Linux 検証は Windows 実機検証の代用にはなりません。
 - [実機検証](docs/HARDWARE_TESTING.md)
 
 公開ライセンスは所有者未決定です。LICENSE は設定していません。
+
+Windows の予備調査: [読み取り専用 PnP 調査ツール](docs/DEVICE_INVENTORY.md)。実機結果待ちであり、対応機種はまだ未確認です。
