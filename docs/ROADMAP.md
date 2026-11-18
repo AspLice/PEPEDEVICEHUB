@@ -2,7 +2,7 @@
 
 以下は GitHub 登録用の計画であり、Issue / milestone 作成済みを意味しない。
 main は安定版、develop は統合、機能は PR で develop に統合。マージはユーザー承認必須。
-空リポジトリのため base 初期化方法の承認が必要。
+ユーザー承認により空の初期コミットから main / develop を作成済み。初期実装は feature/project-bootstrap に分離。
 
 | 仮ID | Issue / milestone | 依存 | 完了条件・検証 | 実機・リスク |
 |---|---|---|---|---|
