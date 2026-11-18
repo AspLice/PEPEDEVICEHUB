@@ -33,3 +33,5 @@ Linux 検証は Windows 実機検証の代用にはなりません。
 公開ライセンスは所有者未決定です。LICENSE は設定していません。
 
 Windows の予備調査: [読み取り専用 PnP 調査ツール](docs/DEVICE_INVENTORY.md)。実機結果待ちであり、対応機種はまだ未確認です。
+
+HID++ のオフライン通信基盤と未確認事項: [調査記録](protocols/logitech/HIDPP20.md)。実機バッテリー取得は未実装です。

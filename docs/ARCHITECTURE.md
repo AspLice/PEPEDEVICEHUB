@@ -17,3 +17,8 @@ UI: egui/eframe、Capability で操作を制限、終了時にプロセス終了
 IPC: Windows Named Pipe、現在ユーザー ACL、version、入力検証、timeout。
 Adapter: Logitech HID++ の Feature 動的解決、Akko は実機リビジョン別。
 現在は Agent の排他起動、常駐、Named Pipe、実機プロトコルはいずれも存在しない。
+
+## Phase 1 のオフライン通信基盤
+
+device-hidpp: HID++2 discovery codec と有限待機の状態処理。物理 I/O は含まない。
+詳細: [HID++調査](../protocols/logitech/HIDPP20.md)。
