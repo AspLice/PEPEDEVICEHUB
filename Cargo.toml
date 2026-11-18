@@ -1,5 +1,5 @@
 [workspace]
-members = ["crates/device-hidpp", "crates/device-core", "crates/device-mock", "crates/device-hub-agent"]
+members = ["crates/device-hub-scan", "crates/device-hidpp", "crates/device-core", "crates/device-mock", "crates/device-hub-agent"]
 resolver = "2"
 
 [workspace.package]

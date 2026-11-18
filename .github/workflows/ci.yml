@@ -23,3 +23,22 @@ jobs:
         if: runner.os == 'Windows'
         shell: powershell
         run: ./scripts/Test-DeviceInventory.ps1
+      - name: Package Windows metadata scanner
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Path scanner-package
+          Copy-Item target/release/device-hub-scan.exe scanner-package/
+          Copy-Item scripts/Run-HidInventory.cmd scanner-package/
+          Copy-Item docs/NATIVE_HID_INVENTORY.md scanner-package/README.md
+          Copy-Item Cargo.lock scanner-package/
+          Copy-Item docs/DEPENDENCIES.md scanner-package/
+          Copy-Item docs/licenses scanner-package/licenses -Recurse
+          "${{ github.sha }}" | Set-Content scanner-package/BUILD_COMMIT.txt
+          (Get-FileHash scanner-package/device-hub-scan.exe -Algorithm SHA256).Hash | Set-Content scanner-package/SHA256.txt
+      - uses: actions/upload-artifact@v4
+        if: runner.os == 'Windows'
+        with:
+          name: device-hub-scan-windows
+          path: scanner-package/
+          if-no-files-found: error
